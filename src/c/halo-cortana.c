@@ -5,6 +5,22 @@ static TextLayer *s_time_layer;
 static BitmapLayer *s_background_layer;
 static GBitmap *s_background_bitmap;
 
+// Color cycling feature - commented out for v1.0 release
+/*
+static int color_index = 2; // Default to cyan
+static const int NUM_COLORS = 4;
+
+static GColor get_color(int index) {
+  switch(index) {
+    case 0: return GColorWhite;
+    case 1: return GColorGreen;
+    case 2: return GColorCyan;
+    case 3: return GColorOrange;
+    default: return GColorCyan;
+  }
+}
+*/
+
 
 
 
@@ -20,6 +36,24 @@ static void update_time() {
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   update_time();
 }
+
+// Color cycling functions - commented out for v1.0 release
+/*
+static void update_color() {
+  text_layer_set_text_color(s_time_layer, get_color(color_index));
+  persist_write_int(1, color_index);
+}
+
+static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
+  color_index = (color_index + 1) % NUM_COLORS;
+  update_color();
+  vibes_short_pulse();
+}
+
+static void click_config_provider(void *context) {
+  window_single_click_subscribe(BUTTON_ID_SELECT, select_click_handler);
+}
+*/
 
 
 
@@ -44,6 +78,9 @@ static void main_window_load(Window *window) {
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
+  
+  // Color cycling click handler - commented out for v1.0 release
+  // window_set_click_config_provider(window, click_config_provider);
 }
 
 static void main_window_unload(Window *window) {
@@ -63,6 +100,18 @@ static void init() {
     .load = main_window_load,
     .unload = main_window_unload
   });
+  
+
+  
+  // Color preference loading - commented out for v1.0 release
+  /*
+  if (persist_exists(1)) {
+    color_index = persist_read_int(1);
+    if (color_index < 0 || color_index >= NUM_COLORS) {
+      color_index = 2; // Default to cyan
+    }
+  }
+  */
   
 
   

@@ -1,6 +1,6 @@
 # Halo Cortana Watchface
 
-A minimalist Pebble watchface featuring Cortana from the Halo universe with clean time display in signature cyan color.
+A minimalist Pebble watchface featuring Chief and Cortana from the Halo universe with clean time display in signature cyan color.
 
 ## Features
 
