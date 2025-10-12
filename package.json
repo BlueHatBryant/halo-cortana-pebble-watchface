@@ -1,0 +1,36 @@
+{
+  "name": "halo-cortana",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "halo-cortana",
+    "uuid": "9f4fdd7f-3188-4ad9-b87f-4c24be43ea38",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "CORTANA_BG",
+          "file": "images/cortana_144x168v6.png"
+        }
+      ]
+    }
+  }
+}

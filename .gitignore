@@ -1,0 +1,27 @@
+# Pebble build files
+build/
+.lock-waf*
+
+# Python files
+*.pyc
+__pycache__/
+*.pyo
+*.py
+
+# OS files
+.DS_Store
+Thumbs.db
+*.Zone.Identifier
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
