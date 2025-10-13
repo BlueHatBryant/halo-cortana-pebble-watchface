@@ -5,7 +5,7 @@ A minimalist Pebble watchface featuring Chief and Cortana from the Halo universe
 ## Features
 
 - **Clean Design**: Time-only display with no clutter
-- **Halo Theme**: Cortana background with cyan text matching her signature color
+- **Halo Theme**: Chief/Cortana background with cyan text matching her signature color
 - **12-Hour Format**: Always displays time in 12-hour format (e.g., 3:45)
 - **Universal Compatibility**: Works on all Pebble models (Aplite, Basalt, Chalk, Diorite, Emery)
 - **Low Memory Usage**: Only 1065 bytes RAM footprint
