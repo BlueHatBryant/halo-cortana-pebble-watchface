@@ -77,8 +77,7 @@ halo-cortana/
 
 ## Credits
 
-- **Developer**: MakeAwesomeHappen
-- **Cortana Character**: Microsoft/343 Industries (Halo franchise)
+- **Master Chief & Cortana Character**: Microsoft/343 Industries (Halo franchise)
 - **Platform**: Pebble Technology
 
 ## License
