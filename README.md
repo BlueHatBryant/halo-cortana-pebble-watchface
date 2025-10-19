@@ -13,19 +13,19 @@ A minimalist Pebble watchface featuring Chief and Cortana from the Halo universe
 ## Screenshots
 
 ### Pebble (Aplite) - 144×168 B&W
-![Aplite Screenshot](aplite.png)
+![Aplite Screenshot](resources/screenshots/aplite.png)
 
 ### Pebble Time (Basalt) - 144×168 Color
-![Basalt Screenshot](basalt.png)
+![Basalt Screenshot](resources/screenshots/basalt.png)
 
 ### Pebble Time Round (Chalk) - 180×180 Color
-![Chalk Screenshot](chalk.png)
+![Chalk Screenshot](resources/screenshots/chalk.png)
 
 ### Pebble 2 (Diorite) - 144×168 B&W
-![Diorite Screenshot](diorite.png)
+![Diorite Screenshot](resources/screenshots/diorite.png)
 
 ### Pebble Time 2 (Emery) - 200×228 Color
-![Emery Screenshot](emery.png)
+![Emery Screenshot](resources/screenshots/emery.png)
 
 ## Installation
 
